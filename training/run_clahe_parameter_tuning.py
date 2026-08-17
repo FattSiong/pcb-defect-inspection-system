@@ -189,13 +189,9 @@ def train_clahe(
     # FIND BEST.PT
     # =====================================================
 
-    best_model_path = (
-        PROJECT_DIR
-        / experiment_name
-        / "weights"
-        / "best.pt"
+    best_model_path = Path(
+    model.trainer.best
     )
-
 
     if not best_model_path.exists():
 
@@ -211,7 +207,6 @@ def train_clahe(
         f"Best model:\n"
         f"{best_model_path}"
     )
-
 
     return best_model_path
 
