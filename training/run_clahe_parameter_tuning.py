@@ -10,7 +10,7 @@ import torch
 
 MODEL_NAME = "yolov8n.pt"
 
-EPOCHS = 1
+EPOCHS = 50
 IMAGE_SIZE = 640
 
 # Recommended for your RTX 3050 4GB.
