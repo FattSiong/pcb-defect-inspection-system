@@ -27,6 +27,9 @@ ADAPTIVE_C = 2
 
 # Only blockSize changes
 BLOCK_SIZES = [
+    11,
+    21,
+    31,
     41,
     51
 ]
