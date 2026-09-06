@@ -1,0 +1,7 @@
+streamlit
+pandas
+pillow
+opencv-python
+numpy
+ultralytics
+reportlab==4.4.2
