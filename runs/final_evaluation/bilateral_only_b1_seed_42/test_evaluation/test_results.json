@@ -1,0 +1,97 @@
+{
+    "method": "Bilateral Filtering Only",
+    "configuration": "bilateral_only_b1",
+    "model": "YOLOv8n",
+    "model_path": "D:\\GitHub\\pcb-defect-inspection-system\\runs\\bilateral_only\\seed_42\\bilateral_only_b1_train\\weights\\best.pt",
+    "dataset": "C:\\Users\\hangg\\Downloads\\pcb_dataset_bilateral_only_b1\\data.yaml",
+    "split": "test",
+    "test_images": 1068,
+    "image_size": 640,
+    "test_batch_size": 4,
+    "device": 0,
+    "workers": 4,
+    "processing_configuration": {
+        "bilateral_d": 3,
+        "sigma_color": 15.0,
+        "sigma_space": 3.0,
+        "kernel_sizes": [
+            7,
+            15,
+            31
+        ],
+        "alpha": 0.0,
+        "beta": 0.0
+    },
+    "overall_metrics": {
+        "precision": 0.9749864412818127,
+        "recall": 0.938513904577455,
+        "f1_score": 0.9564025780267823,
+        "map50": 0.9706922678692841,
+        "map50_95": 0.5016651362755619,
+        "lowest_class_map50_95": 0.4850322110877806
+    },
+    "per_class_metrics": [
+        {
+            "class_id": 0,
+            "class_name": "mouse_bite",
+            "precision": 0.9717053109371976,
+            "recall": 0.9367469879518072,
+            "f1_score": 0.9539059726324695,
+            "map50": 0.9731830453537326,
+            "map50_95": 0.48950257125555596
+        },
+        {
+            "class_id": 1,
+            "class_name": "spur",
+            "precision": 0.9765794769643059,
+            "recall": 0.9166666666666666,
+            "f1_score": 0.9456750849808541,
+            "map50": 0.9619209154636629,
+            "map50_95": 0.49512195787865815
+        },
+        {
+            "class_id": 2,
+            "class_name": "missing_hole",
+            "precision": 0.9808568297310714,
+            "recall": 0.9894459102902374,
+            "f1_score": 0.985132648952374,
+            "map50": 0.9925422861663454,
+            "map50_95": 0.5528552699726091
+        },
+        {
+            "class_id": 3,
+            "class_name": "short",
+            "precision": 0.9714924359046281,
+            "recall": 0.9311053964162715,
+            "f1_score": 0.9508702619985127,
+            "map50": 0.9462123623711587,
+            "map50_95": 0.4885923012637929
+        },
+        {
+            "class_id": 4,
+            "class_name": "open_circuit",
+            "precision": 0.990780022516758,
+            "recall": 0.9344380537686127,
+            "f1_score": 0.9617846075284295,
+            "map50": 0.9794155057202414,
+            "map50_95": 0.4850322110877806
+        },
+        {
+            "class_id": 5,
+            "class_name": "spurious_copper",
+            "precision": 0.9585045716369148,
+            "recall": 0.9226804123711341,
+            "f1_score": 0.9402513850958761,
+            "map50": 0.9708794921405637,
+            "map50_95": 0.49888650619497454
+        }
+    ],
+    "yolo_speed_ms_per_image": {
+        "preprocess": 1.0067588951737771,
+        "inference": 4.9876798691414646,
+        "loss": 0.0017494384974610995,
+        "postprocess": 0.9856660110105966
+    },
+    "yolo_total_ms_per_image": 6.9818542138233,
+    "total_test_wall_time_seconds": 28.403137899993453
+}
