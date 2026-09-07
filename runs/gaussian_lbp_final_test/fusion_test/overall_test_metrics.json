@@ -1,0 +1,22 @@
+{
+    "Technique": "Gaussian Filtering + Uniform LBP Luminance Fusion",
+    "Configuration": "G2-L1-W1",
+    "Model": "YOLOv8n",
+    "Gaussian Kernel": 3,
+    "Gaussian Sigma": 0.8,
+    "LBP Points": 8,
+    "LBP Radius": 1.0,
+    "LBP Weight": 0.15,
+    "Gaussian Weight": 0.85,
+    "Test Images": 1068,
+    "Precision": 0.9600985776686807,
+    "Recall": 0.9358549545276373,
+    "F1-score": 0.9478217640759511,
+    "mAP50": 0.9650962106874953,
+    "mAP50-95": 0.49103376336560617,
+    "YOLO Preprocess Time (ms/image)": 0.5769198504232973,
+    "Inference Time (ms/image)": 7.464471442188041,
+    "Postprocess Time (ms/image)": 1.3738747184515376,
+    "Total YOLO Time (ms/image)": 9.415266011062876,
+    "Total Test Wall Time (seconds)": 34.42475860007107
+}

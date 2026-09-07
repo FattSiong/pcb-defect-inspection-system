@@ -1,0 +1,145 @@
+{
+    "method": "Gaussian + single-scale uniform LBP fusion",
+    "configuration": "G2_L1_W1",
+    "model": "YOLOv8n",
+    "model_path": "C:\\Users\\ASUS\\Desktop\\image processing\\pcb-defect-inspection-system\\runs\\gaussian_lbp\\gaussian_lbp_final_w1\\weights\\best.pt",
+    "dataset": "C:\\Users\\ASUS\\Downloads\\pcb_dataset_gaussian_lbp_final_w1\\data.yaml",
+    "split": "test",
+    "test_images": 1068,
+    "image_size": 640,
+    "test_batch_size": 4,
+    "device": 0,
+    "processing_configuration": {
+        "method": "gaussian_uniform_lbp_luminance_fusion",
+        "source_dataset": "C:\\Users\\ASUS\\Downloads\\pcb_dataset_reduced",
+        "output_dataset": "C:\\Users\\ASUS\\Downloads\\pcb_dataset_gaussian_lbp_final_w1",
+        "splits": [
+            "train",
+            "val",
+            "test"
+        ],
+        "image_format": "png",
+        "gaussian_filter": {
+            "kernel_size": 3,
+            "sigma": 0.8,
+            "colour_space": "LAB lightness"
+        },
+        "lbp": {
+            "points": 8,
+            "radius": 1.0,
+            "method": "rotation-invariant uniform",
+            "number_of_codes": 10
+        },
+        "fusion": {
+            "gaussian_weight": 0.85,
+            "lbp_weight": 0.15,
+            "preserved_channels": [
+                "LAB A",
+                "LAB B"
+            ]
+        },
+        "processing_statistics": [
+            {
+                "split": "train",
+                "images": 1200,
+                "elapsed_seconds": 102.1574924000306,
+                "seconds_per_image": 0.08513124366669217
+            },
+            {
+                "split": "val",
+                "images": 1066,
+                "elapsed_seconds": 81.26456519996282,
+                "seconds_per_image": 0.07623317560972122
+            },
+            {
+                "split": "test",
+                "images": 1068,
+                "elapsed_seconds": 76.27505040005781,
+                "seconds_per_image": 0.07141858651690806
+            }
+        ]
+    },
+    "locked_parameters": {
+        "gaussian_kernel": 3,
+        "gaussian_sigma": 0.8,
+        "lbp_points": 8,
+        "lbp_radius": 1.0,
+        "lbp_weight": 0.15,
+        "gaussian_weight": 0.85
+    },
+    "overall_metrics": {
+        "precision": 0.9600985776686807,
+        "recall": 0.9358549545276373,
+        "f1_score": 0.9478217640759511,
+        "map50": 0.9650962106874953,
+        "map50_95": 0.49103376336560617,
+        "lowest_class_map50_95": 0.45978381549117053
+    },
+    "per_class_metrics": [
+        {
+            "class_id": 0,
+            "class_name": "mouse_bite",
+            "precision": 0.936596593760138,
+            "recall": 0.9186746987951807,
+            "f1_score": 0.9275490836492115,
+            "map50": 0.9531418572137885,
+            "map50_95": 0.49250496535647176
+        },
+        {
+            "class_id": 1,
+            "class_name": "spur",
+            "precision": 0.9677618954532511,
+            "recall": 0.9109195402298851,
+            "f1_score": 0.9384807920217965,
+            "map50": 0.9426631520841503,
+            "map50_95": 0.45978381549117053
+        },
+        {
+            "class_id": 2,
+            "class_name": "missing_hole",
+            "precision": 0.9781824450654468,
+            "recall": 0.9920844327176781,
+            "f1_score": 0.9850843934391768,
+            "map50": 0.9943856105006106,
+            "map50_95": 0.5548970130864603
+        },
+        {
+            "class_id": 3,
+            "class_name": "short",
+            "precision": 0.9665947287671147,
+            "recall": 0.9487028109885965,
+            "f1_score": 0.9575652004284233,
+            "map50": 0.960387098098508,
+            "map50_95": 0.4791280752476168
+        },
+        {
+            "class_id": 4,
+            "class_name": "open_circuit",
+            "precision": 0.9704583578901695,
+            "recall": 0.9014492753623189,
+            "f1_score": 0.934681784452557,
+            "map50": 0.9704982724858263,
+            "map50_95": 0.46619058620266723
+        },
+        {
+            "class_id": 5,
+            "class_name": "spurious_copper",
+            "precision": 0.9409974450759628,
+            "recall": 0.9432989690721649,
+            "f1_score": 0.9421468015062707,
+            "map50": 0.9695012737420882,
+            "map50_95": 0.4936981248092507
+        }
+    ],
+    "yolo_speed_ms_per_image": {
+        "preprocess": 2.6640808988059086,
+        "inference": 6.833498314618611,
+        "loss": 0.004134831552425128,
+        "postprocess": 1.4792168548911433
+    },
+    "yolo_total_ms_per_image": 10.980930899868088,
+    "offline_dataset_generation_ms_per_image": 71.41858651690806,
+    "estimated_pipeline_ms_per_image": 82.39951741677615,
+    "estimated_pipeline_fps": 12.13599340566532,
+    "speed_note": "Offline dataset-generation time includes image and label I/O; it is not a pure in-memory preprocessing benchmark."
+}

@@ -1,0 +1,2 @@
+Experiment,Dataset,Precision,Recall,F1-score,mAP50,mAP50-95,Training Time (seconds),Best Model
+gaussian_lbp_final_w1,C:\Users\ASUS\Downloads\pcb_dataset_gaussian_lbp_final_w1\data.yaml,0.9633068258345293,0.9360981944118746,0.949507630775195,0.9626554326108282,0.5011232039189343,7894.595231771469,C:\Users\ASUS\Desktop\image processing\pcb-defect-inspection-system\runs\gaussian_lbp\gaussian_lbp_final_w1\weights\best.pt

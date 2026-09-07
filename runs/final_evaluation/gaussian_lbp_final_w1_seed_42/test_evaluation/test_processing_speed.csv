@@ -1,0 +1,9 @@
+stage,milliseconds_per_image
+offline_dataset_generation,71.41858651690806
+yolo_preprocess,2.6640808988059086
+yolo_inference,6.833498314618611
+yolo_loss,0.004134831552425128
+yolo_postprocess,1.4792168548911433
+yolo_total,10.980930899868088
+estimated_pipeline_total,82.39951741677615
+estimated_pipeline_fps,12.13599340566532

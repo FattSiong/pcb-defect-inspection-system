@@ -1,0 +1,2 @@
+method,configuration,test_images,precision,recall,f1_score,map50,map50_95,lowest_class_map50_95
+Gaussian + single-scale uniform LBP fusion,G2_L1_W1,1068,0.9600985776686807,0.9358549545276373,0.9478217640759511,0.9650962106874953,0.49103376336560617,0.45978381549117053
