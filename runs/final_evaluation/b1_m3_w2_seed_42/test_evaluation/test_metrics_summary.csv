@@ -1,0 +1,2 @@
+method,configuration,test_images,precision,recall,f1_score,map50,map50_95,lowest_class_map50_95
+Bilateral + Multi-scale Top-Hat/Black-Hat,B1_M3_W2,1068,0.9710607268397315,0.9386127816292545,0.9545610869165685,0.9690218800744627,0.5010569219174532,0.47192685660042566
