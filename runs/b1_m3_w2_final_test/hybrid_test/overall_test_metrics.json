@@ -1,0 +1,22 @@
+{
+    "Technique": "Bilateral Filtering + Multi-scale Top-Hat/Black-Hat Morphology",
+    "Configuration": "B1-M3-W2",
+    "Model": "YOLOv8n",
+    "Bilateral Diameter": 3,
+    "Sigma Colour": 15.0,
+    "Sigma Space": 3.0,
+    "Morphology Kernels": "[7, 15, 31]",
+    "Alpha": 0.7,
+    "Beta": 0.7,
+    "Test Images": 1068,
+    "Precision": 0.9710607268397315,
+    "Recall": 0.9386127816292545,
+    "F1-score": 0.9545610869165685,
+    "mAP50": 0.9690218800744627,
+    "mAP50-95": 0.5010569219174532,
+    "YOLO Preprocess Time (ms/image)": 0.4378978464615528,
+    "Inference Time (ms/image)": 6.409222940133435,
+    "Postprocess Time (ms/image)": 0.9562114236417684,
+    "Total YOLO Time (ms/image)": 7.803332210236756,
+    "Total Test Wall Time (seconds)": 28.187538800004404
+}

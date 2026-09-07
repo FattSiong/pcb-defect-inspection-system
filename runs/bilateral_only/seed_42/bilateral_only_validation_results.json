@@ -1,0 +1,29 @@
+{
+    "configuration": "bilateral_only_b1",
+    "dataset": "C:\\Users\\hangg\\Downloads\\pcb_dataset_bilateral_only_b1\\data.yaml",
+    "seed": 42,
+    "bilateral_d": 3,
+    "sigma_color": 15.0,
+    "sigma_space": 3.0,
+    "kernel_sizes": [
+        7,
+        15,
+        31
+    ],
+    "alpha": 0.0,
+    "beta": 0.0,
+    "precision": 0.9694672174344742,
+    "recall": 0.9445264850633585,
+    "f1_score": 0.9568343532923149,
+    "map50": 0.9691554148809169,
+    "map50_95": 0.5102761927238724,
+    "mouse_bite_map50_95": 0.5297052571376092,
+    "spur_map50_95": 0.49747733809816425,
+    "missing_hole_map50_95": 0.5565882438631904,
+    "short_map50_95": 0.488931662941125,
+    "open_circuit_map50_95": 0.4831467763709133,
+    "spurious_copper_map50_95": 0.5058078779322325,
+    "lowest_class_map50_95": 0.4831467763709133,
+    "training_seconds": 3034.2580469000386,
+    "best_model": "D:\\GitHub\\pcb-defect-inspection-system\\runs\\bilateral_only\\seed_42\\bilateral_only_b1_train\\weights\\best.pt"
+}
