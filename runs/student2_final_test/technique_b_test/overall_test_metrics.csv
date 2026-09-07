@@ -1,0 +1,2 @@
+Technique,Model,Canny Thresholds,Hough Threshold,Min Line Length,Max Line Gap,Precision,Recall,F1-score,mAP50,mAP50-95,YOLO Preprocess Time (ms/image),Inference Time (ms/image),Postprocess Time (ms/image),Total YOLO Time (ms/image),Total Test Wall Time (seconds)
+Canny Edge Detection + Hough Transform,YOLOv8n,50-150,80,60,5,0.7489953856381631,0.6102107611914874,0.6725176242989088,0.6490627344907902,0.3185257756450586,0.3550320223657491,3.913299904129911,1.2114643254875441,5.4797962519832035,24.743716500001028

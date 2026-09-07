@@ -1,0 +1,2 @@
+Configuration,Precision,Recall,F1-score,mAP50,mAP50-95,Testing Time (seconds),Weights Used
+"Canny (50, 150)",0.6494683074948576,0.4835987320205483,0.5543927041181472,0.5020320338641044,0.23781074482357586,36.18907046318054,runs\detect\runs\canny_parameter_tuning\config_1_sensitive\weights\best.pt
