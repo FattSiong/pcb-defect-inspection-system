@@ -1,0 +1,2 @@
+method,configuration,test_images,precision,recall,f1_score,map50,map50_95,lowest_class_map50_95
+Bilateral Filtering Only,bilateral_only_b1,1068,0.9749864412818127,0.938513904577455,0.9564025780267823,0.9706922678692841,0.5016651362755619,0.4850322110877806

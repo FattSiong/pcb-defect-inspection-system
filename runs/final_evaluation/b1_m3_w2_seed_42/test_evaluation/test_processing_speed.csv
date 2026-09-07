@@ -1,0 +1,9 @@
+stage,milliseconds_per_image
+image_enhancement,64.90120711611681
+yolo_preprocess,0.905973967801333
+yolo_inference,4.89737500117443
+yolo_loss,0.0012646080866762985
+yolo_postprocess,0.7719243468964395
+yolo_total,6.576537923958878
+end_to_end_total,71.47774504007569
+frames_per_second,13.990368602693417
