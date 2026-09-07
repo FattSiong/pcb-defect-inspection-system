@@ -1,0 +1,2 @@
+Technique,Model,CLAHE Clip Limit,CLAHE Tile Grid,Adaptive Block Size,Adaptive C,Precision,Recall,F1-score,mAP50,mAP50-95,YOLO Preprocess Time (ms/image),Inference Time (ms/image),Postprocess Time (ms/image),Total YOLO Time (ms/image),Total Test Wall Time (seconds)
+CLAHE + Adaptive Gaussian Thresholding,YOLOv8n,1.0,8x8,41,2,0.9527264135573094,0.8939565181101451,0.9224063024248815,0.9336304606652898,0.47831197591908114,0.36013033707864456,4.6327684456928635,0.6695795880149882,5.662478370786497,19.3028052

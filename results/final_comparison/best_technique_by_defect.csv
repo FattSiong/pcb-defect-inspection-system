@@ -1,0 +1,7 @@
+Defect Class,Best Technique,Best mAP50-95
+Mouse Bite,Technique C,0.4925049653564717
+Spur,Technique D,0.4883036492434326
+Missing Hole,Technique C,0.5548970130864603
+Short,Technique D,0.5028317863812728
+Open Circuit,Technique D,0.4890783679509436
+Spurious Copper,Technique D,0.5061197586467461
