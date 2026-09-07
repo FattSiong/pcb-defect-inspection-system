@@ -1,0 +1,18 @@
+{
+    "Technique": "Canny Edge Detection + Hough Transform",
+    "Model": "YOLOv8n",
+    "Canny Thresholds": "50-150",
+    "Hough Threshold": 80,
+    "Min Line Length": 60,
+    "Max Line Gap": 5,
+    "Precision": 0.7489953856381631,
+    "Recall": 0.6102107611914874,
+    "F1-score": 0.6725176242989088,
+    "mAP50": 0.6490627344907902,
+    "mAP50-95": 0.3185257756450586,
+    "YOLO Preprocess Time (ms/image)": 0.3550320223657491,
+    "Inference Time (ms/image)": 3.913299904129911,
+    "Postprocess Time (ms/image)": 1.2114643254875441,
+    "Total YOLO Time (ms/image)": 5.4797962519832035,
+    "Total Test Wall Time (seconds)": 24.743716500001028
+}
