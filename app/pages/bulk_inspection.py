@@ -289,7 +289,7 @@ st.write(
 upload_method = st.radio(
     "Upload Method",
     [
-        "Upload Individual Images",
+        "Upload Images",
         "Upload Folder",
     ],
     horizontal=True,
@@ -303,7 +303,7 @@ uploaded_files = []
 # INDIVIDUAL IMAGE UPLOAD
 # ============================================================
 
-if upload_method == "Upload Individual Images":
+if upload_method == "Upload Images":
 
     uploaded_files = st.file_uploader(
         "Choose one or more PCB images",
